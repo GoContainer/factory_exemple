@@ -1,0 +1,22 @@
+---
+factory:
+  provider: aws # aws or azure or gcp
+  ansible: 
+    requirements: factory_ansible_requirements.yml
+    playbook: factory_ansible.yml
+    
+image: 
+  os_type: linux # linux or windows
+  os_name: CentOS_7_AMI_001
+  source: centos_7 # centos_7 or ubuntu_16.04
+
+aws:
+  region: eu-west-1
+  # accounts_to_share_with:
+  tags:
+    os_name: CentOS 
+    os_version: 7
+    origin: OSFactory
+    root_device_type: ebs
+    virtualization_type: hvm
+  
