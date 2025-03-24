@@ -19,4 +19,5 @@ aws:
     origin: OSFactory
     root_device_type: ebs
     virtualization_type: hvm
-  
+
+  #Gros c'est la puissance 
